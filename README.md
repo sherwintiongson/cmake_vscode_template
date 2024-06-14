@@ -1,11 +1,11 @@
 #Toolchain:
-..MinGW
-..VSCode
-..VSCode Extensions
-       ...- C/C++ IntelliSense, debugging, and code browsing.
-       ...- C/C++ Extension Pack
-       ...- CMake (CMake langage support for Visual Studio Code)
-       ...- CMake Tools (Extended CMake support in Visual Studio Code)
+##MinGW
+##VSCode
+##VSCode Extensions
+       ###C/C++ IntelliSense, debugging, and code browsing.
+       ###C/C++ Extension Pack
+       ###CMake (CMake langage support for Visual Studio Code)
+       ###CMake Tools (Extended CMake support in Visual Studio Code)
  
 
 
