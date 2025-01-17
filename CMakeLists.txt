@@ -11,6 +11,6 @@ include(GoogleTest)
 add_subdirectory(PrivateLibrary)
 add_subdirectory(features)
 add_subdirectory(tests)
-add_subdirectory(main)
+add_subdirectory(Main)
 
 enable_testing()
