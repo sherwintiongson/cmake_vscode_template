@@ -6,7 +6,7 @@
             "name": "MainApp)",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\build\\Main\\Exe.exe",
+            "program": "${workspaceFolder}\\build\\main\\main.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -37,7 +37,7 @@
             "name": "UnitTests",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}\\build\\LibraryTests\\LibraryTests.exe",  // Change to your test executable
+            "program": "${workspaceFolder}\\build\\tests\\tests.exe",  // Change to your test executable
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

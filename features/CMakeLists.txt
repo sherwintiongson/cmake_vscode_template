@@ -1,4 +1,4 @@
-project(Library)
+project(features)
 
 add_library(${PROJECT_NAME} 
     lib.h 

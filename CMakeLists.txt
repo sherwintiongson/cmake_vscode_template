@@ -9,8 +9,8 @@ add_subdirectory(googletest)
 include(GoogleTest)
 
 add_subdirectory(PrivateLibrary)
-add_subdirectory(feature/Library)
-add_subdirectory(LibraryTests)
-add_subdirectory(Main)
+add_subdirectory(features)
+add_subdirectory(tests)
+add_subdirectory(main)
 
 enable_testing()
