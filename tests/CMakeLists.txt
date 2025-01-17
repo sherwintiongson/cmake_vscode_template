@@ -1,6 +1,6 @@
 project(tests)
 
-add_executable(${PROJECT_NAME} src/test_main.cpp)
+add_executable(${PROJECT_NAME} src/test_lib.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE features)
 target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest_main)

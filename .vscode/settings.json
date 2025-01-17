@@ -67,5 +67,31 @@
                     "C:\\msys64\\msys2_shell.cmd -defterm -here -no-start -ucrt64"
                 ]
             }
-        }
+        },
+        "editor.tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": "googletest.failed",
+                    "settings": {
+                        "foreground": "#f00"
+                    }
+                },
+                {
+                    "scope": "googletest.passed",
+                    "settings": {
+                        "foreground": "#0f0"
+                    }
+                },
+                {
+                    "scope": "googletest.run",
+                    "settings": {
+                        "foreground": "#0f0"
+                    }
+                }
+            ]
+        },
+        "gtest-adapter.debugConfig": [
+            "UnitTests"
+        ],
+        "gtest-adapter.supportLocation": true
 }
