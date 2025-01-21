@@ -1,4 +1,3 @@
-#include <lib.h>
 #include <stdint.h>
 
 int main()
@@ -7,7 +6,7 @@ int main()
     {
         for (uint32_t i = 0; i < 200; i++)
         {
-            print_hello();
+           
         }
     }
     return 0;
