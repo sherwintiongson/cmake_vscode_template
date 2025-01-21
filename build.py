@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+import shutil
 
 def run_command(command, cwd=None):
     """Run a shell command and handle errors."""
@@ -15,12 +16,18 @@ def run_command(command, cwd=None):
 
 # Set the project root directory
 PROJECT_ROOT = r"C:\00_VISUAL_STUDIO_CODE\cmake_vscode_template"
+BUILD_DIR = os.path.join(PROJECT_ROOT, "build")
+
+# Remove the build directory if it exists
+if os.path.exists(BUILD_DIR):
+    print(f"Deleting existing build directory: {BUILD_DIR}")
+    shutil.rmtree(BUILD_DIR)
 
 print("\nRunning CMake")
 os.chdir(PROJECT_ROOT)
 # Configure CMake
 run_command('cmake -S ./ -B ./build -G "MinGW Makefiles"')
-# Clean build
+# Clean build (no longer needed since we deleted the folder, but keeping for safety)
 run_command('cmake --build ./build --target clean')
 # Build
 run_command('cmake --build ./build')

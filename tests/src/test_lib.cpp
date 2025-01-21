@@ -1,9 +1,13 @@
 #include <gtest/gtest.h>
 #include <iostream>
 #include "lib.h"
+#include "calcu.h"
 
 
-
+TEST(Test_Calcu, InvalidLutShouldReturnError)
+{
+  EXPECT_EQ(10, calcu(9,1));
+}
 
 TEST(Test_SymmetricLut, InvalidLutShouldReturnError)
 {
