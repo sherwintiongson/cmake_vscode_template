@@ -6,7 +6,9 @@ add_library(${PROJECT_NAME}
     string_utils/string_utils.hpp  
     string_utils/string_utils.cpp  
     file_utils/file_utils.hpp  
-    file_utils/file_utils.cpp  
+    file_utils/file_utils.cpp 
+    account/account.hpp  
+    account/account.cpp   
 )
 
 target_include_directories(${PROJECT_NAME}

@@ -5,6 +5,9 @@ add_executable(${PROJECT_NAME}
   test_math_utils.cpp 
   test_string_utils.cpp 
   test_file_utils.cpp 
+  test_account.cpp
+  test_fixture_account.hpp
+  test_fixture_account.cpp
 )
 
 # Include directories (including the math, string, and file directories inside src)
@@ -12,6 +15,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${SRC_DIR}/features/math_utils
     ${SRC_DIR}/features/string_utils
     ${SRC_DIR}/features/file_utils
+    ${SRC_DIR}/features/account
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE features)
