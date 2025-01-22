@@ -12,9 +12,6 @@ class AccountTestFixture: public testing::Test
     virtual ~AccountTestFixture();
     void SetUp() override;
     void TearDown() override;
-    static void SetUpTestCase();
-    static void TearDownTestCase();
-
   protected:
     account myAccount;
 };
