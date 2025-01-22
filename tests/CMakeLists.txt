@@ -18,6 +18,8 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${SRC_DIR}/features/string_utils
     ${SRC_DIR}/features/file_utils
     ${SRC_DIR}/features/account
+    ${SRC_DIR}/features/math_service
+    ${SRC_DIR}/features/calculator
 )
 
 # Link the features library
