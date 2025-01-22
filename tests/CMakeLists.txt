@@ -1,5 +1,6 @@
 project(tests)
 
+# Add test executable with source files
 add_executable(${PROJECT_NAME}
   main_test_runner.cpp 
   test_math_utils.cpp 
@@ -18,7 +19,11 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${SRC_DIR}/features/account
 )
 
+# Link the features library
 target_link_libraries(${PROJECT_NAME} PRIVATE features)
-target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest_main)
 
+# Link both GoogleTest and GoogleMock
+target_link_libraries(${PROJECT_NAME} PRIVATE GTest::gtest_main GTest::gmock GTest::gmock_main)
+
+# Automatically discover and add tests to CTest
 gtest_discover_tests(${PROJECT_NAME})

@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "C:\00_VISUAL_STUDIO_CODE\cmake_vscode_template\features\string_utils\string_utils.hpp"
 
 // String Utilities Tests
