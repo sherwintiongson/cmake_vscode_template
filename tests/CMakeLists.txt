@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME}
   mock_basic.cpp
   mock_math_service.hpp
   test_calculator.cpp
+  test_math_service.cpp
 )
 
 # Include directories (including the math, string, and file directories inside src)

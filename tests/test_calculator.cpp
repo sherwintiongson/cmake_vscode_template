@@ -10,6 +10,7 @@ TEST(CalculatorTest, AdditionTest) {
     Calculator calculator(mockMathService);
 
     EXPECT_CALL(mockMathService, add(10, 5))
+        .Times(testing::Exactly(1))
         .WillOnce(Return(15));
 
     EXPECT_EQ(calculator.cal_add(10, 5), 15);
@@ -20,6 +21,7 @@ TEST(CalculatorTest, SubtractionTest) {
     Calculator calculator(mockMathService);
 
     EXPECT_CALL(mockMathService, subtract(10, 5))
+        .Times(testing::Exactly(1))
         .WillOnce(Return(5));
 
     EXPECT_EQ(calculator.cal_subtract(10, 5), 5);
@@ -30,6 +32,7 @@ TEST(CalculatorTest, MultiplicationTest) {
     Calculator calculator(mockMathService);
 
     EXPECT_CALL(mockMathService, multiply(10, 5))
+        .Times(testing::Exactly(1))
         .WillOnce(Return(50));
 
     EXPECT_EQ(calculator.cal_multiply(10, 5), 50);
@@ -40,6 +43,7 @@ TEST(CalculatorTest, DivisionTest) {
     Calculator calculator(mockMathService);
 
     EXPECT_CALL(mockMathService, divide(10, 2))
+        .Times(testing::Exactly(1))
         .WillOnce(Return(5.0));
 
     EXPECT_DOUBLE_EQ(calculator.cal_divide(10, 2), 5.0);
