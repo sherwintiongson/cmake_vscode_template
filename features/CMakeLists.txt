@@ -15,6 +15,7 @@ set(HEADER_FILES
     string_utils/string_utils.hpp
     file_utils/file_utils.hpp
     account/account.hpp
+    math_service/imath_service.hpp
     math_service/math_service.hpp
     calculator/calculator.hpp
 )

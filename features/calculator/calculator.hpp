@@ -10,10 +10,10 @@ class Calculator
 
   public:
       Calculator(const MathService& mathService_) : mathService(mathService_) {}
-      int add(int a, int b) const;
-      int subtract(int a, int b) const;
-      int multiply(int a, int b) const;
-      double divide(int a, int b) const;
+      int cal_add(int a, int b) const;
+      int cal_subtract(int a, int b) const;
+      int cal_multiply(int a, int b) const;
+      double cal_divide(int a, int b) const;
 };
 
 #endif // CALCULATOR_H
